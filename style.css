@@ -81,11 +81,27 @@ table {
 .submit-button {
     background-color: #596d48;
     color: #ffffff;
-    border-radius: 0.25rem;
+    border-radius: 0.50rem;
+	width: 4rem;
+	height: 2rem;
+}
+
+input {
+	border: 1px solid grey;
+	border-radius: 0.25rem;
+	width: 10vw;
+	height: 3vh;
+}
+
+input:focus {
+	border: 1px solid lightblue;
+	border-radius: 0.25rem;
+	box-shadow: 1px grey;
 }
 
 input:invalid {
 	border: 1px solid red;
+	border-radius: 0.25rem;
 }
 
 .odin-logo {
@@ -109,4 +125,59 @@ input:invalid {
 	text-align: center;
 	margin-bottom: 0;
 	margin-top: 40vh;
+}
+
+.p-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: 3rem;
+	width: calc(70vw - 10rem);
+	font-weight: 600;
+	font-size: 2em;
+}
+
+.em-text {
+	margin-top: 2rem;
+}
+
+.form {
+	width: 70vw;
+	margin: 3rem;
+}
+
+.input-last {
+	margin-left: 1rem;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.label-text {
+	font-size: 1em;
+	font-weight: 500;
+}
+
+.input-margin {
+	margin: 0 1.50em 1em 0;
+}
+
+.required {
+	color: red;
+}
+
+.log-in-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: 3rem;
+	width: calc(70vw - 10rem);
+	font-weight: 400;
+	font-size: 1em;
+}
+
+.white-link {
+	color: #ffffff;
 }

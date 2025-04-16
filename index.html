@@ -13,39 +13,59 @@
             <img src="odin-lined.png" class="odin-logo">
             <span class="logo-text">Raccoon</span>
         </div>
-        <p class="credit-text">Photo by Igor Haritanovich on Pexels.</p>
+        <p class="credit-text">Photo by <a href="https://www.pexels.com/@igor-haritanovich-814387" class="white-link" target="_blank">Igor Haritanovich</a> on <a href="https://www.pexels.com" class="white-link" target="_blank">Pexels</a>.</p>
     </div>
+
     <div class="form-container">
-        <p>
-            This is not a real online raccoon! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em class="italic">now</em> to get started.
-        </p>
+        <div class="p-container">
+            <p>
+                This is not a real online raccoon! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em class="italic">now</em> to get started.
+            </p>
+            <p class="em-text">You <em class="italic">know</em> you want to.</p>
+        </div>
 
-        <p>You <em class="italic">know</em> you want to.</p>
-    <form>
-        <fieldset>
-            <label for="first-name">First name:</label>
-            <input type="text" id="first-name" required>
-            <label for="last-name">Last name:</label>
+    <form class="form">
+        <fieldset class="flex-container">
+            <div class="flex-col input-margin">
+            <label for="first-name" class="label-text">First name<br></label>
+            <input type="text" id="first-name">
+            </div>
+            <div class="flex-col input-margin">
+            <label for="last-name" class="label-text">Last name<br></label>
             <input type="text" id="last-name">
+            </div>
         </fieldset>
 
-        <fieldset>
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            <label for="phone-num">Phone number:</label>
+        <fieldset class="flex-container">
+            <div class="flex-col input-margin">
+            <label for="email" class="label-text">Email<br></label>
+            <input type="email" id="email">
+            </div>
+            <div class="flex-col input-margin">
+            <label for="phone-num" class="label-text">Phone number<br></label>
             <input type="text" id="phone-num">
+            </div>
         </fieldset>
 
-        <fieldset>
-            <label for="password">Password:</label>
-            <input type="password" id="password" required>
-            <label for="pass-confirm">Confirm password:</label>
-            <input type="password" id="pass-confirm" required>
+        <fieldset class="flex-container">
+            <div class="flex-col input-margin">
+            <label for="pass" class="label-text">Password<span class="required">*</span><br></label>
+            <input type="password" id="pass" required minlength="8">
+            </div>
+            <div class="flex-col input-margin">
+            <label for="confirm-pass" class="label-text">Confirm password<span class="required">*</span><br></label>
+            <input type="password" id="confirm-pass" required minlength="8">
+            </div>
+
         </fieldset>
+
+        
 
         <button type="submit" class="submit-button">Sign Up</button>
     </form>
+    <div class="log-in-container">
         <p>Already have an account? <a href="#">Log in</a></p>
+    </div>
     </div>
     </div>
 </body>
