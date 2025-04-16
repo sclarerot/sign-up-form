@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign-Up Form</title>
+</head>
+<body>
+    <div class="flex-container">
+    <div class="logo-container">
+        <div class="transparent-grey-bg flex-container flex-centered">
+            <img src="odin-lined.png" class="odin-logo">
+            <span class="logo-text">Raccoon</span>
+        </div>
+        <p class="credit-text">Photo by Igor Haritanovich on Pexels.</p>
+    </div>
+    <div class="form-container">
+        <p>
+            This is not a real online raccoon! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em class="italic">now</em> to get started.
+        </p>
+
+        <p>You <em class="italic">know</em> you want to.</p>
+    <form>
+        <fieldset>
+            <label for="first-name">First name:</label>
+            <input type="text" id="first-name" required>
+            <label for="last-name">Last name:</label>
+            <input type="text" id="last-name">
+        </fieldset>
+
+        <fieldset>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="phone-num">Phone number:</label>
+            <input type="text" id="phone-num">
+        </fieldset>
+
+        <fieldset>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <label for="pass-confirm">Confirm password:</label>
+            <input type="password" id="pass-confirm" required>
+        </fieldset>
+
+        <button type="submit" class="submit-button">Sign Up</button>
+    </form>
+        <p>Already have an account? <a href="#">Log in</a></p>
+    </div>
+    </div>
+</body>
+</html>
